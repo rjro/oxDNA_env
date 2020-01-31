@@ -19,7 +19,7 @@ CREATE TABLE `Users` (
   `username` varchar(32) NOT NULL DEFAULT '',
   `password` varchar(64) NOT NULL DEFAULT '',
   `email` varchar(100) NOT NULL UNIQUE,
-  `status` int(1) NOT NULL DEFAULT `1`,
+  `status` int(1) NOT NULL DEFAULT `1`, --1 - basic; 2 - advanced; 3 - administrator
   `group` int(1) NOT NULL,
   `creationDate` varchar(32) NOT NULL DEFAULT '',
   PRIMARY KEY (`id`),
