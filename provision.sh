@@ -46,7 +46,7 @@ service mysql restart
 pip3 install mysql-connector bcrypt flask
 
 cd /vagrant
-git clone git@github.com:rjro/azDNA_env.git
+git clone https://github.com/rjro/azDNA.git
 cd azDNA
 
 #create admin account
