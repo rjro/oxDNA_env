@@ -9,7 +9,7 @@ CREATE TABLE `Jobs` (
   `uuid` varchar(64) DEFAULT NULL,
   `slurmId` varchar(16) DEFAULT NULL,
   `jobType` int(2) DEFAULT 0,
-  `analysisJobId` varchar(32) DEFAULT NULL,
+  `analysisJobId` varchar(64) DEFAULT NULL,
   `creationDate` varchar(32) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
