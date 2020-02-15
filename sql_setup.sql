@@ -8,6 +8,7 @@ CREATE TABLE `Jobs` (
   `name` varchar(16) DEFAULT NULL,
   `uuid` varchar(64) DEFAULT NULL,
   `slurmId` varchar(16) DEFAULT NULL,
+  `jobType` int(2) DEFAULT 0,
   `creationDate` varchar(32) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
