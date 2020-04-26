@@ -22,6 +22,13 @@ CREATE TABLE `Users` (
   `password` varchar(64) NOT NULL DEFAULT '',
   `group` int(1) NOT NULL,
   `creationDate` varchar(32) NOT NULL DEFAULT '',
+  `administrator` tinyint(1) NOT NULL DEFAULT 0,
+  `privaleged` tinyint(1) NOT NULL DEFAULT 0,
+  `verified` varchar(16) NOT NULL DEFAULT 'FALSE',
+  `verifycode` varchar(32),
+  `firstName` varchar(32),
+  `lastName` varchar(32),
+  `institution` varchar(32), 
   PRIMARY KEY (`id`),
   UNIQUE KEY `username` (`username`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
