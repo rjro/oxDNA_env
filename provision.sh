@@ -19,6 +19,9 @@ mkdir build && cd build
 cmake ..
 make -j4
 
+#why are there different paths used?
+ln -s /opt/oxdna-cpu-only /opt/oxdna
+
 #setup slurm
 cd /vagrant
 cp slurm.conf /etc/slurm-llnl
