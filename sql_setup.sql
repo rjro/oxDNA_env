@@ -11,6 +11,7 @@ CREATE TABLE `Jobs` (
   `jobType` int(2) DEFAULT 0,
   `analysisJobId` varchar(64) DEFAULT NULL,
   `creationDate` varchar(32) DEFAULT NULL,
+  `status` varchar(16) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
