@@ -47,9 +47,13 @@ service mysql restart
 #install python dependencies
 pip3 install mysql-connector bcrypt flask biopython pathos yagmail
 
+#get analysis tools
+cd /opt
+git clone https://github.com/sulcgroup/oxdna_analysis_tools
+
+#get azDNA
 cd /vagrant
 git clone https://github.com/rjro/azDNA.git
-git clone https://github.com/sulcgroup/oxdna_analysis_tools
 cd azDNA
 
 #create admin account
