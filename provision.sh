@@ -9,16 +9,15 @@ apt-get update
 apt-get -y install cmake python3-pip build-essential slurm-llnl mysql-server
 
 #install oxdna
+cd /opt
+mkdir oxdna-cpu-only && cd oxdna-cpu-only
 wget -O oxdna.tgz https://sourceforge.net/projects/oxdna/files/latest/download
 tar -xvzf oxdna.tgz
 rm oxdna.tgz
 cd oxDNA
-mkdir build
-cd build
+mkdir build && cd build
 cmake ..
 make -j4
-cd bin
-mv * /usr/bin
 
 #setup slurm
 cd /vagrant
@@ -43,7 +42,7 @@ mysql -Bse "source sql_setup.sql"
 service mysql restart
 
 #install python dependencies
-pip3 install mysql-connector bcrypt flask biopython pathos
+pip3 install mysql-connector bcrypt flask biopython pathos yagmail
 
 cd /vagrant
 git clone https://github.com/rjro/azDNA.git
@@ -51,4 +50,6 @@ git clone https://github.com/sulcgroup/oxdna_analysis_tools
 cd azDNA
 
 #create admin account
-python3 Provision.py
+#python3 Provision.py
+
+mkdir /users
