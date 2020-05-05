@@ -62,8 +62,7 @@ git clone https://github.com/rjro/oxviewer-azdna-integration
 mv oxviewer-azdna-integration oxdna-viewer
 
 #create admin account
-cd /vagrant/azDNA
-python3 Provision.py
+python3 /vagrant/azDNA/Provision.py
 
 mkdir /users
 chown vagrant /users
