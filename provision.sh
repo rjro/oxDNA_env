@@ -51,17 +51,19 @@ pip3 install mysql-connector bcrypt flask biopython pathos yagmail
 cd /opt
 git clone https://github.com/sulcgroup/oxdna_analysis_tools
 
-#get oxviewer 
-cd /vagrant/azDNA/static
-git clone https://github.com/rjro/oxviewer-azdna-integration
-mv oxviewer-azdna-integration oxdna-viewer
-
 #get azDNA
 cd /vagrant
 git clone https://github.com/rjro/azDNA.git
 cd azDNA
 
+#get oxviewer 
+cd /vagrant/azDNA/static
+git clone https://github.com/rjro/oxviewer-azdna-integration
+mv oxviewer-azdna-integration oxdna-viewer
+
+
 #create admin account
+cd /vagrant/azDNA
 python3 Provision.py
 
 mkdir /users
