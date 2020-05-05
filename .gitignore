@@ -2,3 +2,4 @@ azDNA/
 oxdna_analysis_tools/
 *.log
 **/.DS_Store
+.vagrant/
