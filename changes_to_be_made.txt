@@ -1,3 +1,0 @@
-#partition must be CPU!
-#had to clone oxviewer and integrate
-#dunno wat else

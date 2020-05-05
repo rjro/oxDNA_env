@@ -63,7 +63,7 @@ mv oxviewer-azdna-integration oxdna-viewer
 
 
 #create admin account
-cd /vagrant/azDNA
+cd /vagrant/
 python3 Provision.py
 
 mkdir /users
