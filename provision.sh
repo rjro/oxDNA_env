@@ -45,7 +45,7 @@ mysql -Bse "source sql_setup.sql"
 service mysql restart
 
 #install python dependencies
-pip3 install mysql-connector bcrypt flask biopython pathos yagmail
+pip3 install mysql-connector bcrypt flask biopython pathos yagmail pymysql pymysql-pool
 
 #get analysis tools
 cd /opt
