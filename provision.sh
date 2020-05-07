@@ -45,7 +45,7 @@ mysql -Bse "source sql_setup.sql"
 service mysql restart
 
 #install python dependencies
-pip3 install mysql-connector bcrypt flask biopython pathos yagmail
+pip3 install mysql-connector bcrypt flask biopython pathos yagmail pymysql pymysql-pool
 
 #get analysis tools
 cd /opt
@@ -56,7 +56,14 @@ cd /vagrant
 git clone https://github.com/rjro/azDNA.git
 cd azDNA
 
+#get oxviewer 
+cd /vagrant/azDNA/static
+git clone https://github.com/rjro/oxviewer-azdna-integration
+mv oxviewer-azdna-integration oxdna-viewer
+
 #create admin account
-#python3 Provision.py
+cd /vagrant/azDNA
+python3 Provision.py
 
 mkdir /users
+chown vagrant /users
