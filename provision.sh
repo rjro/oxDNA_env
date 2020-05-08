@@ -6,7 +6,7 @@ export DEBIAN_FRONTEND="noninteractive"
 #debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password mysqlpass'
 
 apt-get update
-apt-get -y install cmake python3-pip build-essential slurm-llnl mysql-server
+apt-get -y install gunicorn3 cmake python3-pip build-essential slurm-llnl mysql-server
 
 #install oxdna
 cd /opt
@@ -45,7 +45,7 @@ mysql -Bse "source sql_setup.sql"
 service mysql restart
 
 #install python dependencies
-pip3 install mysql-connector bcrypt flask biopython pathos yagmail pymysql pymysql-pool
+pip3 install bcrypt flask biopython pathos yagmail pymysql pymysql-pool
 
 #get analysis tools
 cd /opt
