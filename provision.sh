@@ -56,6 +56,10 @@ cd /vagrant
 git clone https://github.com/rjro/azDNA.git
 cd azDNA
 
+#move trajectory zipper
+cd /vagrant
+cp zip_traj.py /opt/
+
 #get oxviewer 
 cd /vagrant/azDNA/static
 git clone https://github.com/rjro/oxviewer-azdna-integration
