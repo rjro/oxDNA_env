@@ -70,3 +70,4 @@ chown vagrant /users
 
 #move nginx config
 cp /vagrant/nginx.conf /etc/nginx/nginx.conf
+service nginx restart
