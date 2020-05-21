@@ -6,7 +6,7 @@ export DEBIAN_FRONTEND="noninteractive"
 #debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password mysqlpass'
 
 apt-get update
-apt-get -y install gunicorn3 cmake python3-pip build-essential slurm-llnl mysql-server
+apt-get -y install nginx gunicorn3 cmake python3-pip build-essential slurm-llnl mysql-server
 
 #install oxdna
 cd /opt
@@ -71,3 +71,7 @@ python3 Provision.py
 
 mkdir /users
 chown vagrant /users
+
+#move nginx config
+cp /vagrant/nginx.conf /etc/nginx/nginx.conf
+service nginx restart
