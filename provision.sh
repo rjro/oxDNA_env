@@ -45,6 +45,12 @@ mysql -Bse "source sql_setup.sql"
 service mysql restart
 
 #install python dependencies
+add-apt-repository ppa:deadsnakes/ppa
+apt-get update
+apt-get -y install python3.7
+update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.7 1
+apt-get -y install python3.7-gdbm
+pip3 install --upgrade pip
 pip3 install bcrypt flask biopython pathos yagmail pymysql pymysql-pool
 
 #get analysis tools
