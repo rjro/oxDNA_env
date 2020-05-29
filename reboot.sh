@@ -1,5 +1,8 @@
 cd /vagrant/azDNA
-#pull latest changesi
+#pull latest changes
 git pull
-python3 main.py > server_output.log 2>&1 &
-echo "Server now alive at :9000!"
+pwd
+#python3 main.py > server_output.log 2>&1 &
+sh vagrant_restart.sh
+echo "Server now ready at :9000!"
+#echo "do vagrant ssh; cd /vagrant/azDNA; ./vagrant_restart.sh; to start the server" 

@@ -45,6 +45,12 @@ mysql -Bse "source sql_setup.sql"
 service mysql restart
 
 #install python dependencies
+add-apt-repository ppa:deadsnakes/ppa
+apt-get update
+apt-get -y install python3.7
+update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.7 1
+apt-get -y install python3.7-gdbm
+pip3 install --upgrade pip
 pip3 install bcrypt flask biopython pathos yagmail pymysql pymysql-pool
 
 #get analysis tools
@@ -55,6 +61,10 @@ git clone https://github.com/sulcgroup/oxdna_analysis_tools
 cd /vagrant
 git clone https://github.com/rjro/azDNA.git
 cd azDNA
+
+#move trajectory zipper
+cd /vagrant
+cp zip_traj.py /opt/
 
 #get oxviewer 
 cd /vagrant/azDNA/static
