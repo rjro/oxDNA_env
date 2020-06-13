@@ -4,7 +4,7 @@ Welcome, this repository sets up a  developer environment for working on [azDNA]
 Important files to take a look at would be
 - [Vagrantfile](/Vagrantfile): the file which will be used to setup the Vagrant box
 - [provision.sh](/provision.sh): a script for installing all libraries and frameworks upon first launch
-- [sql_setup.sql](/sql_setup.sql): a SQL script used to initialize the MySQL database running on the server.
+- [sql_setup.sql](/sql_setup.sql): a SQL script used to initialize the MySQL database running on the server
 
 # Setup
 In order to get setup, follow these steps:
