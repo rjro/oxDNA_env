@@ -27,7 +27,7 @@ In order to get setup, follow these steps:
 
 6. You can now visit http://localhost:9000 and use the server as desired.
 
-### NOTE: Binding to port 9000 is default behavior, but does not allow you to use nginx (which runs on port 80). [See below](#why-can't-i-see-simulation-outputs?) for how to bind to port 80.
+### NOTE: Binding to port 9000 is default behavior, but does not allow you to use nginx (which runs on port 80). [See below](#why-cant-i-see-simulation-outputs) for how to bind to port 80.
 
 # FAQ
 
