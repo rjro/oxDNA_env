@@ -1,5 +1,5 @@
 # azDNA_env
-Welcome, this repository setups a  developer environment for working on [azDNA](https://github.com/rjro/azDNA). This developer environment is provisioned into a containerized VirtualBox by using [Vagrant](https://www.vagrantup.com/). If you are familiar with Vagrant, clone, vagrant up, and you're good to go. 
+Welcome, this repository sets up a  developer environment for working on [azDNA](https://github.com/rjro/azDNA). This developer environment is provisioned into a containerized VirtualBox by using [Vagrant](https://www.vagrantup.com/). If you are familiar with Vagrant, clone, vagrant up, and you're good to go. 
 
 Important files to take a look at would be
 - [Vagrantfile](/Vagrantfile): the file which will be used to setup the Vagrant box
