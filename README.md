@@ -60,7 +60,7 @@ This is because simulation outputs, and static files, are supposed to be served 
 ...
 ```
 
-Nginx is being used to forward port 9000 to port 80, which is the port which python3 (or in production: [gunicorn](https://gunicorn.org/)) will be serving the Python application on. 
+Nginx is being used to forward port 80 to port 9000, which is the port which python3 (or in production: [gunicorn](https://gunicorn.org/)) will be serving the Python application on. 
 
 Nginx forwards *most* requests to port 9000, besides requests for ```/userfiles/``` and ```/static```. These file paths are intercepted and resolved by nginx, because nginx is better at serving large files.
 
