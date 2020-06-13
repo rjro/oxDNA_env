@@ -62,7 +62,7 @@ This is because simulation outputs, and static files, are supposed to be served 
 
 Nginx is being used to forward port 80 to port 9000, which is the port which python3 (or in production: [gunicorn](https://gunicorn.org/)) will be serving the Python application on. 
 
-Nginx forwards *most* requests to port 9000, besides requests for ```/userfiles/``` and ```/static```. These file paths are intercepted and resolved by nginx, because nginx is better at serving large files.
+Nginx forwards *most* requests to port 9000, besides requests for ```/userfiles/``` and ```/static/```. These file paths are intercepted and resolved by nginx, because nginx is better at serving large files than gunicorn. 
 
 Nginx runs on port 80, but Vagrant can't directly expose port 80 to your base machine, unless you run the Virtualbox as root. There are security issues surrounding this, and it's not recommended. 
 
@@ -80,7 +80,9 @@ sh forward_port_80.sh
 
 ## How do I actually make code changes?
 
-The [azDNA repository](https://github.com/rjro/azDNA) will be cloned into the azDNA_env directory.
+The [azDNA repository](https://github.com/rjro/azDNA) will be cloned into the azDNA directory. You can open up this folder in your favorite editor and begin making changes, there is no need to make any modifications from within the Vagrant box. 
+
+This is because the ```/vagrant``` folder within the Vagrant box is actually the ```azDNA_env``` folder on your computer. This directory is forwarded by Vagrant automatically.
 
 ## How do I observe changes I make to the server?
 When you launch the server by default, it will start listening on port 9000. If you make changes to server-side logic, you will have to restart the server to observe them.
