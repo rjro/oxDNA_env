@@ -82,7 +82,7 @@ sh forward_port_80.sh
 
 The [azDNA repository](https://github.com/rjro/azDNA) will be cloned into the azDNA directory. You can open up this folder in your favorite editor and begin making changes, there is no need to make any modifications from within the Vagrant box. 
 
-This is because the ```/vagrant``` folder within the Vagrant box is actually the ```azDNA_env``` folder on your computer. This directory is forwarded by Vagrant automatically.
+This is because the ```/vagrant``` folder within the Vagrant box is actually the ```/azDNA_env``` folder on your computer. This directory is forwarded by Vagrant automatically.
 
 ## How do I observe changes I make to the server?
 When you launch the server by default, it will start listening on port 9000. If you make changes to server-side logic, you will have to restart the server to observe them.
