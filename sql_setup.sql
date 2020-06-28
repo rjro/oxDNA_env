@@ -30,6 +30,7 @@ CREATE TABLE `Users` (
   `firstName` varchar(32),
   `lastName` varchar(32),
   `institution` varchar(32), 
+  `jobLimit` tinyint(1) NOT NULL DEFAULT 4,
   PRIMARY KEY (`id`),
   UNIQUE KEY `username` (`username`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
