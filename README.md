@@ -108,3 +108,4 @@ cd /vagrant/azDNA
 #Start the application
 python3 main.py
 ```
+
