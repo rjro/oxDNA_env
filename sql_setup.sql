@@ -31,6 +31,7 @@ CREATE TABLE `Users` (
   `lastName` varchar(32),
   `institution` varchar(32), 
   `jobLimit` tinyint(1) NOT NULL DEFAULT 4,
+  `timeLimit` int(4) NOT NULL DEFAULT 6912000,
   `resetToken` varchar(64) DEFAULT NULL,
   `resetTokenExpiration` int(4) NOT NULL DEFAULT 0,
   PRIMARY KEY (`id`),
