@@ -14,7 +14,6 @@ In order to get setup, follow these steps:
 	> Vagrant is a "wrapper" around virtualization providers like VirtualBox to make provisioning VMs easier. We will be using Vagrant and Virtualbox to create a sandboxed ubuntu machine to host the azDNA application. 
 2. Install Virtualbox (https://www.virtualbox.org/wiki/Downloads)
 	> Virtualbox will be used to actually containerize the application. Please ensure that the hardware you will using supports virtualization. On Intel, this is typically VT-d or VT-x, on, AMD, this is AMD-V. [You may need to enable this in your BIOS.](https://docs.fedoraproject.org/en-US/Fedora/13/html/Virtualization_Guide/sect-Virtualization-Troubleshooting-Enabling_Intel_VT_and_AMD_V_virtualization_hardware_extensions_in_BIOS.html)
-	> Virtualbox will be used to actually containerize the application. Please ensure that the hardwar you will using supports virtualization. On Intel this is typically a setting called [You may need to enable these in your BIOS.]
 
 3. Go to the directory you would like to keep the project in, and clone the repository.  
 	> ```git clone https://github.com/rjro/azDNA_env ```
@@ -108,3 +107,4 @@ cd /vagrant/azDNA
 #Start the application
 python3 main.py
 ```
+
