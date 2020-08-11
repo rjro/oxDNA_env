@@ -60,19 +60,19 @@ git clone https://github.com/sulcgroup/oxdna_analysis_tools
 #get azDNA
 cd /vagrant
 git clone https://github.com/rjro/azDNA.git
-cd azDNA
+cd oxdna-web
 
 #move trajectory zipper
 cd /vagrant
 cp zip_traj.py /opt/
 
 #get oxviewer 
-cd /vagrant/azDNA/static
+cd /vagrant/oxdna-web/static
 git clone https://github.com/rjro/oxviewer-azdna-integration
 mv oxviewer-azdna-integration oxdna-viewer
 
 #create admin account
-cd /vagrant/azDNA
+cd /vagrant/oxdna-web
 python3 Provision.py
 
 mkdir /users

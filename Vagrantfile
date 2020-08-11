@@ -1,5 +1,5 @@
 Vagrant.configure("2") do |config|
-	config.vm.define "azDNA"
+	config.vm.define "oxdna-web"
 	config.vm.provision :shell, path: "provision.sh"
 	config.vm.provision :shell, path: "reboot.sh", run: 'always'
 	config.vm.box = "ubuntu/xenial64"
@@ -10,6 +10,6 @@ Vagrant.configure("2") do |config|
 	config.vm.provider "virtualbox" do |v|
 		v.memory = 1024
 		v.cpus = 2
-		v.name = "azDNA_test"
+		v.name = "oxdna-web_test"
 	end
 end
