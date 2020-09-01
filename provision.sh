@@ -57,9 +57,9 @@ pip3 install bcrypt flask biopython pathos yagmail pymysql pymysql-pool matplotl
 cd /opt
 git clone https://github.com/sulcgroup/oxdna_analysis_tools
 
-#get azDNA
+#get oxdna-viewer
 cd /vagrant
-git clone https://github.com/rjro/azDNA.git
+git clone https://github.com/sulcgroup/oxdna-web.git
 cd oxdna-web
 
 #move trajectory zipper
