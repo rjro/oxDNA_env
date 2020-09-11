@@ -34,7 +34,7 @@ CREATE TABLE `Users` (
   `timeLimit` int(4) NOT NULL DEFAULT 6912000,
   `resetToken` varchar(64) DEFAULT NULL,
   `resetTokenExpiration` int(4) NOT NULL DEFAULT 0,
-  `emailPrefs` varchar(32) NOT NULL DEFAULT '1 1 1',
+  `emailPrefs` varchar(32) NOT NULL DEFAULT '0 1 1',
   PRIMARY KEY (`id`),
   UNIQUE KEY `username` (`username`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
