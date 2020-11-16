@@ -19,7 +19,7 @@ DROP TABLE IF EXISTS `Users`;
 
 CREATE TABLE `Users` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `username` varchar(32) NOT NULL DEFAULT '',
+  `username` varchar(64) NOT NULL DEFAULT '',
   `password` varchar(64) NOT NULL DEFAULT '',
   `group` int(1) NOT NULL,
   `creationDate` varchar(32) NOT NULL DEFAULT '',
